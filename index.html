@@ -7,6 +7,14 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
+    <!-- Thêm đoạn mã này vào phần <body> của tệp index.html, ví dụ như ngay trên thẻ <table> -->
+    <div id="score-display" style="text-align: center; margin-bottom: 20px; display: none;">
+        <span id="player1-score">Người chơi 1 (O): 0</span>
+        <span id="player2-score" style="margin-left: 20px;">Người chơi 2 (X): 0</span>
+        <span id="tie-score" style="margin-left: 20px;">Hòa: 0</span>
+    </div>
+    <!-- ... Các phần tử HTML khác của trò chơi (bảng, nút chuyển chế độ, thông báo kết thúc, v.v.) ... -->
+
     <table>
         <tr>
             <td class="cell" id="0"></td>
@@ -24,7 +32,11 @@
             <td class="cell" id="8"></td>
         </tr>
     </table>
-    
+
+    <div id="mode-selection" style="text-align: center; margin-bottom: 10px;">
+        <button id="mode-toggle-button">Chế độ: Chơi với máy</button>
+    </div>
+
     <div class="endgame">
         <div class="text"></div>
         <button onClick="startGame()">Replay</button>
